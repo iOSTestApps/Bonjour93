@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7ABC9D3D20486CFF00B616E0 /* Greeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC9D3C20486CFF00B616E0 /* Greeter.swift */; };
+		7ABC9D4520486D3700B616E0 /* BonjourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC9D4420486D3700B616E0 /* BonjourTests.swift */; };
+		7ABC9D4D20486D4200B616E0 /* GreeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC9D4C20486D4200B616E0 /* GreeterTests.swift */; };
 		7ADB12A82040625F0090F50C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB12A72040625F0090F50C /* AppDelegate.swift */; };
 		7ADB12AA2040625F0090F50C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB12A92040625F0090F50C /* ViewController.swift */; };
 		7ADB12AD2040625F0090F50C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADB12AB2040625F0090F50C /* Main.storyboard */; };
@@ -14,7 +17,22 @@
 		7ADB12B2204062610090F50C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADB12B0204062610090F50C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7ABC9D4720486D3700B616E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ADB129C2040625F0090F50C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ADB12A32040625F0090F50C;
+			remoteInfo = Bonjour;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		7ABC9D3C20486CFF00B616E0 /* Greeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeter.swift; sourceTree = "<group>"; };
+		7ABC9D4220486D3700B616E0 /* BonjourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonjourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABC9D4420486D3700B616E0 /* BonjourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourTests.swift; sourceTree = "<group>"; };
+		7ABC9D4620486D3700B616E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABC9D4C20486D4200B616E0 /* GreeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreeterTests.swift; sourceTree = "<group>"; };
 		7ADB12A42040625F0090F50C /* Bonjour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonjour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADB12A72040625F0090F50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ADB12A92040625F0090F50C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7ABC9D3F20486D3700B616E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7ADB12A12040625F0090F50C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +60,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7ABC9D4320486D3700B616E0 /* BonjourTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC9D4420486D3700B616E0 /* BonjourTests.swift */,
+				7ABC9D4C20486D4200B616E0 /* GreeterTests.swift */,
+				7ABC9D4620486D3700B616E0 /* Info.plist */,
+			);
+			path = BonjourTests;
+			sourceTree = "<group>";
+		};
 		7ADB129B2040625F0090F50C = {
 			isa = PBXGroup;
 			children = (
 				7ADB12A62040625F0090F50C /* Bonjour */,
+				7ABC9D4320486D3700B616E0 /* BonjourTests */,
 				7ADB12A52040625F0090F50C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				7ADB12A42040625F0090F50C /* Bonjour.app */,
+				7ABC9D4220486D3700B616E0 /* BonjourTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +97,7 @@
 				7ADB12AE204062610090F50C /* Assets.xcassets */,
 				7ADB12B0204062610090F50C /* LaunchScreen.storyboard */,
 				7ADB12B3204062610090F50C /* Info.plist */,
+				7ABC9D3C20486CFF00B616E0 /* Greeter.swift */,
 			);
 			path = Bonjour;
 			sourceTree = "<group>";
@@ -67,6 +105,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7ABC9D4120486D3700B616E0 /* BonjourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ABC9D4920486D3700B616E0 /* Build configuration list for PBXNativeTarget "BonjourTests" */;
+			buildPhases = (
+				7ABC9D3E20486D3700B616E0 /* Sources */,
+				7ABC9D3F20486D3700B616E0 /* Frameworks */,
+				7ABC9D4020486D3700B616E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ABC9D4820486D3700B616E0 /* PBXTargetDependency */,
+			);
+			name = BonjourTests;
+			productName = BonjourTests;
+			productReference = 7ABC9D4220486D3700B616E0 /* BonjourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7ADB12A32040625F0090F50C /* Bonjour */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ADB12B6204062610090F50C /* Build configuration list for PBXNativeTarget "Bonjour" */;
@@ -94,6 +150,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Buddybuild;
 				TargetAttributes = {
+					7ABC9D4120486D3700B616E0 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7ADB12A32040625F0090F50C;
+					};
 					7ADB12A32040625F0090F50C = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -113,11 +173,19 @@
 			projectRoot = "";
 			targets = (
 				7ADB12A32040625F0090F50C /* Bonjour */,
+				7ABC9D4120486D3700B616E0 /* BonjourTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7ABC9D4020486D3700B616E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7ADB12A22040625F0090F50C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,16 +199,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7ABC9D3E20486D3700B616E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABC9D4D20486D4200B616E0 /* GreeterTests.swift in Sources */,
+				7ABC9D4520486D3700B616E0 /* BonjourTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7ADB12A02040625F0090F50C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7ADB12AA2040625F0090F50C /* ViewController.swift in Sources */,
 				7ADB12A82040625F0090F50C /* AppDelegate.swift in Sources */,
+				7ABC9D3D20486CFF00B616E0 /* Greeter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ABC9D4820486D3700B616E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ADB12A32040625F0090F50C /* Bonjour */;
+			targetProxy = 7ABC9D4720486D3700B616E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7ADB12AB2040625F0090F50C /* Main.storyboard */ = {
@@ -162,6 +248,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7ABC9D4A20486D3700B616E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G9SJKMB6B;
+				INFOPLIST_FILE = BonjourTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.BonjourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bonjour.app/Bonjour";
+			};
+			name = Debug;
+		};
+		7ABC9D4B20486D3700B616E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G9SJKMB6B;
+				INFOPLIST_FILE = BonjourTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.BonjourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bonjour.app/Bonjour";
+			};
+			name = Release;
+		};
 		7ADB12B4204062610090F50C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,6 +441,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7ABC9D4920486D3700B616E0 /* Build configuration list for PBXNativeTarget "BonjourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ABC9D4A20486D3700B616E0 /* Debug */,
+				7ABC9D4B20486D3700B616E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7ADB129F2040625F0090F50C /* Build configuration list for PBXProject "Bonjour" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
